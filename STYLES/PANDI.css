@@ -1,0 +1,126 @@
+@charset "ISO-8859-1";
+
+
+
+
+#header{
+	
+
+	height:60px;
+	width:100vw;
+	padding: 5px;
+	margin-right: 5px;	
+	
+}
+
+ul{
+	list-style-type:none;	
+	
+}
+ 
+li{
+	float:left;
+	padding-left: 60px;
+}
+li>a{
+	text-decoration:none;
+	font-size:0.65cm;
+	color:rgb(255, 255, 128);
+	border-width:10px;
+	
+}
+li>a:hover{
+
+	color:rgb(255, 255, 128);
+	background-color:darkslategrey;
+	text-decoration:dashed;
+	border-style:groove;
+}
+#loginpage{
+
+	float:inline-end;
+	
+	margin-right:35px;
+}
+#footer {
+margin-left:20px;
+	height:20px;
+	width:80vw;
+	margin-top:500px;
+	
+	}
+	
+	#loginform{
+		
+	   
+	    opacity:0.9;
+		height:350px;
+		width:600px;
+		float:right;
+		margin-right:400px;
+		margin-top:100px;
+		align-items: center;
+		transition:1s;
+		-o-transition-timing-function:cubic-bezier(1, 0, 0, 1);
+		animation-play-state:running;
+			}
+			#loginform>h4{
+				margin-left:10px;
+				font-size:0.65cm;
+		align-items: center;
+		color:rgb(255, 128, 64);
+			}
+input{
+		
+		padding:5px;
+		border-radius:5px;
+		background-color:rgb(0, 255, 0);
+		height:50px;
+		width:400px;
+		margin:10px;
+		font-size:0.50cm;
+		color:rgb(255, 128, 0);
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#footer>p{
+		font-size:0.65cm;
+		padding-left:5px;
+		color:rgb(255, 255, 128);
+		float:right;
+	}
