@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="favicon" href="Assets/favicon.png">
+        <title>PANDI CLOUDTECH</title>
+        <script href="/index.js" rel="script"></script>
+
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Pandi_Tally</h1>
+        </header>
+
+<div id="form_regis">
+
+  <form style="background-color:aqua;" method="post" id="regis"  action="./claimManagement.html" onsubmit="return result()">
+    
+<fieldset style="background-color: aqua;">
+    <legend>CLAIM REGISTRATION</legend>
+    <fieldset>
+    <table>
+<tr><td><label>Account_No</label></td><td><input type="text" id="account_no" maxlength="16" placeholder="ENTER THE ACCOUNT_NO FOR THE DEPOSITOR"></td></tr>
+<tr><td><label>BRM_ID</label></td><td><input type="text" name="Account_No"  maxlength="" placeholder="ENTER THE BRM ID"></td></tr>
+<tr><td><label>Seq_No/RRN_No</label></td><td><input type="text" name="Account_No" placeholder="ENTER THE SEQ_NO/RRN_NO"></td></tr>
+<tr><td><label>Remarks</label></td><td><textarea rows="2" cols="21" placeholder="ENTER THE REASON"></textarea></tr>
+</table>
+</fieldset>
+<fieldset id="denom">
+        <legend>DENOMINATION</legend>
+    <table>
+
+        <tr><td>   <LABel>50 X </LABel><input type="number" id="50" onpointermove="add()" placeholder="ENTER THE DENOMINATION in 50's"></td>
+          <td> <LABel>100 X </LABel><input type="number" id=100 onpointermove="add()" placeholder="ENTER THE DENOMINATION in 100's"></td></tr>
+                <tr><td> <LABel>200 X </LABel><input type="number" onpointermove="add()" id="200" placeholder="ENTER THE DENOMINATION in 200's"></td>
+        <td> <LABel>500 X </LABel><input type="number" id="500" onmousemove="add()" placeholder="ENTER THE DENOMINATION in 500's"></td></tr>
+        <tr><td><label >Amount</label></td><td><input type="text" id="amount"  placeholder="ENTER THE AMOUNT" value="0" disabled></td></tr>
+
+    </fieldset>
+    
+</table>
+</fieldset>
+
+
+<fieldset><input type="reset" value="CLEAR" ></td><td><input type="submit" value="REGISTER"></fieldset>
+</form>
+ 
+</div>
+<script>
+
+    function add(){
+       
+        
+        f=50*document.getElementById("50").value;
+        h=100*document.getElementById("100").value;
+        t=200*document.getElementById("200").value;
+        fi=500*document.getElementById("500").value;
+
+        name=f+h+t+fi;
+       document.getElementById("amount").value=name;
+    } 
+    function result(){
+
+        window.alert("CLAIM SUCCESSFULLY REGISTERED");
+    }
+</script>
+        <footer>PANDI CLOUDTECH<span>(C)</span>2024.All rights reserved</footer>
+
+
+
+    </body>
+</html>
